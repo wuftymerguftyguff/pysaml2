@@ -62,7 +62,7 @@ class Response(object):
             return [mte.render(**argv)]
         else:
             if isinstance(message, six.string_types):
-                return [message]
+                return [message.encode('utf-8')] 
             elif isinstance(message, six.binary_type):
                 return [message]
             else:
