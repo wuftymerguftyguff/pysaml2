@@ -71,6 +71,6 @@ setup(
     'defusedxml',
     'six'
         ]
-    }
+    },
     zip_safe=False,
 )
