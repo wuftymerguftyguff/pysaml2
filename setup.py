@@ -56,5 +56,21 @@ setup(
     scripts=["tools/parse_xsd2.py", "tools/make_metadata.py",
              "tools/mdexport.py", "tools/merge_metadata.py"],
     install_requires=install_requires,
+    extras_require={
+        'dev': [
+             'decorator',
+    'requests >= 1.0.0',
+    'future',
+    'paste',
+    'zope.interface',
+    'repoze.who',
+    'cryptography',
+    'pytz',
+    'pyOpenSSL',
+    'python-dateutil',
+    'defusedxml',
+    'six'
+        ]
+    }
     zip_safe=False,
 )
